@@ -1,16 +1,25 @@
-let loginbutton = document.getElementById("login");
+const registered_username = localStorage.getItem("username");
+const registered_email = localStorage.getItem("email");
+const registered_password = localStorage.getItem("password");
+const confirmLogin = localStorage.getItem("login");
 
-loginbutton.addEventListener("click", function () {
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
+verifAcc();
 
-    if (email === "hamka.main@gmail.com" && password === "hamkaalpuket") {
-        window.location.href = "app";
-    } else if (email === "www.hafidzm@gmail.com" && password === "hafidz") {
-        window.location.href = "app";
-    } else if (email === "hafidzmushhafa@gmail.com" && password === "hamka") {
-        window.location.href = "app";
+function verifAcc() {
+    if (
+        registered_email &&
+        registered_username &&
+        registered_password &&
+        confirmLogin === "true"
+    ) {
     } else {
-        alert("You have entered an invalid login.");
+        window.location.href = "login/";
     }
+}
+
+const btn_logout = document.getElementById("logout");
+
+btn_logout.addEventListener("click", function () {
+    localStorage.setItem("login", "false");
+    window.location.href = "login/";
 });
