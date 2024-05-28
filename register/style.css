@@ -1,0 +1,94 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+a {
+    margin: 0;
+    padding: 0;
+    color: rgb(230, 237, 243);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    /* background-color: blue; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main {
+    /* background-color: pink; */
+    width: 320px;
+}
+
+.container-info {
+    /* background-color: blue; */
+    border-radius: 5px;
+    border: 1px solid rgba(48, 54, 61, 0.7);
+    background-color: rgb(22, 27, 34);
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.login-text {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    cursor: default;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: rgb(13, 17, 23);
+    border-radius: 5px;
+    height: 32px;
+    border: 1px solid rgb(48, 54, 61);
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid rgb(31, 111, 234);
+}
+
+button {
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(35, 134, 54);
+    height: 37px;
+    outline: none;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid rgba(240, 246, 252, 0.1);
+    cursor: pointer;
+}
+
+a {
+    color: rgb(68, 147, 248);
+    font-size: 12px;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.container-new {
+    /* background-color: blue; */
+    border-radius: 5px;
+    border: 1px solid rgb(48, 54, 61);
+    margin-top: 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-new,
+.text-new a {
+    font-size: 14px;
+}
