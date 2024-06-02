@@ -9,10 +9,184 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     </head>
-    <body>
-        <button type="button" id="logout" style="width: 100%; height: 10vh">
-            LOGOUT
-        </button>
+    <body style="background-color: #0d1117">
+        <main>
+            <div class="container">
+                <div class="container-top">
+                    <div class="title">
+                        <h1>Application</h1>
+                    </div>
+                    <div class="button-container">
+                        <button
+                            type="button"
+                            style="
+                                background-color: rgb(35, 134, 54);
+                                border: none;
+                            "
+                            id="btn-newtask"
+                        >
+                            New task
+                        </button>
+                        <button
+                            type="button"
+                            style="
+                                border: 1px solid #57606a;
+                                background-color: #31363e;
+                            "
+                        >
+                            Edited
+                        </button>
+                        <button
+                            type="button"
+                            style="
+                                border: 1px solid #57606a;
+                                background-color: #31363e;
+                            "
+                        >
+                            Trash
+                        </button>
+                        <div class="profil">
+                            <p>Hamka</p>
+                            <img
+                                src="img/logo.png"
+                                alt="foto-profil"
+                                class="foto-profil"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="container-input" id="container-input">
+                    <input type="text" name="" id="task" />
+                    <input type="date" name="" id="date" />
+                    <button type="button" id="add-task">Add task</button>
+                </div>
+
+                <div class="container-task">
+                    <h1 class="no-task" id="no-task">
+                        You dont have any tasks.
+                    </h1>
+                    <div class="container-all" id="container-all">
+                        <h1>You need to do :</h1>
+                        <div
+                            class="container-main vis-all-task"
+                            id="vis-all-task"
+                        >
+                            <div class="container-table">
+                                <table
+                                    border="1"
+                                    cellspacing="0"
+                                    style="border-radius: 5px"
+                                    id="table-todo"
+                                >
+                                    <tr>
+                                        <td id="the-task"></td>
+                                        <td id="the-deadline"></td>
+                                        <td id="the-point">Point : +1000</td>
+                                        <td
+                                            id="btn-edit"
+                                            style="cursor: pointer"
+                                        >
+                                            <svg
+                                                aria-hidden="true"
+                                                focusable="false"
+                                                role="img"
+                                                class="octicon octicon-pencil"
+                                                viewBox="0 0 16 16"
+                                                width="16"
+                                                height="16"
+                                                fill="currentColor"
+                                                style="
+                                                    display: inline-block;
+                                                    user-select: none;
+                                                    vertical-align: text-bottom;
+                                                    overflow: visible;
+                                                "
+                                            >
+                                                <path
+                                                    d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"
+                                                ></path>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <h1>The completed tasks :</h1>
+                        <div
+                            class="container-main vis-complete"
+                            id="table-complete"
+                        >
+                            <div class="container-table">
+                                <table
+                                    border="1"
+                                    cellspacing="0"
+                                    style="border-radius: 5px"
+                                >
+                                    <tr>
+                                        <td id="the-complete-task"></td>
+                                        <td id="the-complete-deadline"></td>
+                                        <td id="the-point">Point : +1000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="edit-con" id="vis-edit">
+            <div class="edit-back">
+                <div class="edit-top">
+                    <div class="title-edit-task">
+                        <h1>Edit task</h1>
+                    </div>
+                    <div class="button-edit-task">
+                        <button
+                            type="button"
+                            style="
+                                border: 1px solid #57606a;
+                                background-color: #31363e;
+                            "
+                            id="save-edit"
+                        >
+                            Save
+                        </button>
+                        <button
+                            type="button"
+                            style="
+                                background-color: rgb(35, 134, 54);
+                                border: none;
+                            "
+                            id="complete-task"
+                        >
+                            Complete
+                        </button>
+                        <button
+                            type="button"
+                            style="background-color: red; border: none"
+                            id="delete-task"
+                        >
+                            Delete
+                        </button>
+                        <button
+                            type="button"
+                            style="
+                                border: 1px solid #57606a;
+                                background-color: #31363e;
+                            "
+                            id="close-edit"
+                        >
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+                <div class="edit-input">
+                    <input type="text" name="" id="edit-task" />
+                    <input type="date" name="" id="edit-deadline" />
+                </div>
+            </div>
+        </div>
     </body>
     <script src="script.js"></script>
 </html>
