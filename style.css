@@ -1,1 +1,277 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+a {
+    margin: 0;
+    padding: 0;
+    color: rgb(230, 237, 243);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    cursor: default;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 50%;
+    margin-top: 116px;
+    background-color: #161b22;
+    border: 1px solid #57606a;
+    border-radius: 5px;
+}
+
+.container-top {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.title {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.button-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container button {
+    width: 78px;
+    height: 38px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+
+.profil {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-profil {
+    border: 1px solid #57606a;
+    height: 38px;
+    width: 38px;
+    border-radius: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.container-input {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.container-input input {
+    height: 28px;
+    background-color: transparent;
+    border: 1px solid #57606a;
+    border-radius: 5px;
+}
+
+.container-input input[type="text"] {
+    width: 288px;
+}
+
+.container-input input[type="text"]:focus {
+    outline: none;
+}
+
+.container-input input[type="date"] {
+    width: 150px;
+    margin-left: 10px;
+    color-scheme: dark;
+}
+
+.container-input input[type="date"]:focus {
+    outline: none;
+}
+
+.container-input button {
+    height: 32px;
+    width: 78px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(35, 134, 54);
+    border: none;
+    margin-left: 10px;
+}
+
+.container-task {
+    padding-top: 50px;
+    border-top: 1px solid #57606a;
+    margin-bottom: 50px;
+}
+
+.container-all {
+    display: none;
+    /* display: block; */
+}
+
+.container-task h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.container-table {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+}
+
+.container-table table tr td {
+    padding: 5px 10px;
+}
+
+.no-task {
+    display: block;
+    /* display: none; */
+}
+
+.vis-all-task {
+    display: none;
+    /* display: flex; */
+}
+
+.vis-complete {
+    display: none;
+    /* display: flex; */
+}
+
+.edit-con {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.edit-back {
+    width: 700px;
+    height: 200px;
+    background-color: #161b22;
+    border: 1px solid #57606a;
+    border-radius: 5px;
+}
+
+.edit-top {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.title-edit-task {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.title-edit-task h1 {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.button-edit-task {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.button-edit-task button {
+    width: 78px;
+    height: 38px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+
+.edit-input {
+    padding-top: 50px;
+    border-top: 1px solid #57606a;
+    margin-top: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-input input {
+    height: 28px;
+    background-color: transparent;
+    border: 1px solid #57606a;
+    border-radius: 5px;
+}
+
+.edit-input input[type="text"] {
+    width: 225px;
+    margin-right: 10px;
+}
+
+.edit-input input[type="text"]:focus {
+    outline: none;
+}
+
+.edit-input input[type="date"] {
+    width: 225px;
+    color-scheme: dark;
+    margin-left: 10px;
+}
+
+.edit-input input[type="date"]:focus {
+    outline: none;
+}
 
